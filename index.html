@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Square Layout</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+        position: relative;
+      }
+      .corner {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+      .red {
+        background-color: red;
+        top: 0%;
+        left: 0%;
+      }
+      .green {
+        background-color: blue;
+        bottom: 0;
+        left: 0;
+      }
+      .yellow {
+        background-color: yellow;
+        bottom: 0%;
+        right: 0;
+      }
+      .black {
+        background-color: black;
+        top: 0%;
+        right: 0%;
+      }
+      .center {
+        width: 50px;
+        height: 50px;
+        background-color: magenta;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="corner red"></div>
+    <div class="corner green"></div>
+    <div class="corner blue"></div>
+    <div class="corner yellow"></div>
+    <div class="corner black"></div>
+    <div class="center"></div>
+  </body>
+</html>
